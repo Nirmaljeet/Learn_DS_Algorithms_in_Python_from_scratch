@@ -34,7 +34,7 @@ class Linked:
             temp = temp.next
 if __name__ =='__main__':
     llist = Linked()
-    llist.head = Node(1)
+    llist.head = Node(7)
     second = Node(2)
     third = Node(3)
     new_data = Node(4)
