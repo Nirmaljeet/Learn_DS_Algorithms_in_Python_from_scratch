@@ -8,8 +8,8 @@ def isPangram(string):
 
     string = input()
     if(isPangram(string) == True):
-        print('Yes')
+        print('pangram')
     else:
-        print('NO')
+        print('not pangram')
 
     
