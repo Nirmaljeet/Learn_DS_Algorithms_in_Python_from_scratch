@@ -1,18 +1,21 @@
-alphabets = "abcdefghijklmnopqrstuvwxyz"
-numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
-
-stack1 = []
-stack2 = []
-for i in range(0, len(alphabets)):
-    stack1.append(alphabets[i])
-print(stack1)
-
-for i in range(0, len(alphabets)):
-    stack2.append(numbers[i])
-print(stack2)
-
-string = input()
-n = int(input())
-
-for i in range(0, n):
-    n1 = int(input())
+def weightedUniformStrings(s, queries):
+    weights = set()
+    prev = -1
+    length = 0
+    for c in s:
+        weight = ord(c) - ord('a') + 1
+        weights.add(weight)
+        if prev == c:
+            length += 1
+            weights.add(length*weight)
+        else:
+            prev = c
+            length = 1
+     
+    rval = []
+    for q in queries:
+        if q in weights:
+            rval.append("Yes")
+        else:
+            rval.append("No")
+    return rval
