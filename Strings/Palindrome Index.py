@@ -10,5 +10,4 @@ for i in range(n):
     else:
         print(-1)
     
-    if string[i+1] == string[i+2]:
-        print(a.index(string[i]))
+    
