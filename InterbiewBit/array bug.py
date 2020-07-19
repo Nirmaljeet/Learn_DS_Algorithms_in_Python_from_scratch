@@ -19,5 +19,5 @@ for i in range(n):
     x = int(input())
     arr.append(x)
 
-leftRotate(arr, 2, len(arr))
+leftRotate(arr, d, len(arr))
 printArray(arr, len(arr))
