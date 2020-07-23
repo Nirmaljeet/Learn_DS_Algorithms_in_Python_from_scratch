@@ -6,3 +6,6 @@ for i in range(0, n):
         if string[i] == string[i+1]:
             count += 1
     print(count)
+
+
+    

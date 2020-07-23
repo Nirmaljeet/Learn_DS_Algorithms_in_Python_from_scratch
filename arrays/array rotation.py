@@ -19,3 +19,4 @@ def printArray(arr, size):
 print('Array after rotation is: ')
 leftRotate(arr, 2, 7)
 printArray(arr, 7)
+

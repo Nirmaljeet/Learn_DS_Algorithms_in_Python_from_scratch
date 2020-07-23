@@ -8,3 +8,5 @@ for i in range(n):
 
     for char in string:
         print(char)
+
+
