@@ -1,17 +1,16 @@
+
 from array import *
 arr = array('i', [])
 
-n = int(input())
-t = int(input())
+
+n = int(input("Number of elements")) 
+#t = int(input("Values"))
 for i in range(n):
-    x = int(input())
+    x = int(input("Values of those elements"))
     arr.append(x)
-    if arr[i] == t:
-        print("True")
-    else:
-        print("False")
-
-
+    
+    
 
 print(arr)
+
 
