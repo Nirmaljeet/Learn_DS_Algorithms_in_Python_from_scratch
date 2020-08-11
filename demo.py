@@ -1,3 +1,3 @@
-a = set('nirmal')
-b = set('vanshu')
-print(a & b)
+a = set("nirmal")
+b = set("abcd")
+print(a, b)
