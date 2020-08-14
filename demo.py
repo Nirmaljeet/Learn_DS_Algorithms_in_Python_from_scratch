@@ -1,4 +1,1 @@
-def phone(n):
-    if n == 2:
-        return list('abc')
-print(phone(2))
+arr = [2,3,4,5,6]
