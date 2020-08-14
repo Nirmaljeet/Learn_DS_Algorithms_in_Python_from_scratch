@@ -6,7 +6,7 @@ def closest(a):
     smallest_difference = maxint
     smallest_pairs = []
      
-    for idx in xrange(len(a)-1):
+    for idx in range(len(a)-1):
         diff = a[idx+1] - a[idx]
         if diff < smallest_difference:
             smallest_difference = diff
@@ -15,9 +15,9 @@ def closest(a):
             smallest_pairs.append((a[idx], a[idx+1]))
      
     for pair in smallest_pairs:
-        print pair[0], pair[1],
+        print (pair[0], pair[1])
      
 if __name__ == '__main__':
     n = input()
-    vec = map(int, raw_input().split())
+    vec = map(int, input().split())
     closest(vec)
