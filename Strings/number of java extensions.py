@@ -1,5 +1,3 @@
-
-
 def javafind(str1, str2):
     count = 0
     res = str1.split('.')
@@ -9,6 +7,6 @@ def javafind(str1, str2):
     if res1[-1] == 'java':
         count += 1
     return count
-str1 = "nirmaljeet"
+str1 = "nirmaljeet.java"
 str2 = "abc"
 print(javafind(str1,str2))

@@ -16,8 +16,8 @@ def anagrams(str1, str2):
     res = 0
     for i in range(26):
         res += abs(count1[i]-count2[i])
-    return count1
-    return count2
-str1 = "bcadeh"
-str2 = 'hea'
+    return res
+str1 = input()
+
+str2 = input()
 print(anagrams(str1, str2))
