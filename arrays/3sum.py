@@ -8,5 +8,5 @@ def threesum(arr, n):
     return False
 
 arr = [-1,0,1,2,-1,-4]
-n = 0
+n = 2
 print(threesum(arr, n))
